@@ -1,0 +1,20 @@
+CGD
+===
+
+Cgd is a daemon that can serve a CGI script over HTTP or SCGI.
+
+Useful for CGI scripts that serve a whole domain, or to wrap CGI scripts so they can be served by nginx.
+
+
+Install Instructions
+--------------------
+
+	go get github.com/uriel/cgd/
+
+Will install as $GOPATH/bin/cgd
+
+
+License
+-------
+
+MIT/CC0
