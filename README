@@ -1,10 +1,11 @@
 CGD
 ===
 
-Cgd is a daemon that can serve a CGI script over HTTP or SCGI.
+Cgd is a daemon that can serve a CGI script over HTTP or FastCGI.
 
 Useful for CGI scripts that serve a whole domain, or to wrap CGI scripts so they can be served by nginx.
 
+Homepage: http://repo.cat-v.org
 
 Install Instructions
 --------------------
