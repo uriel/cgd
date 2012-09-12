@@ -63,7 +63,10 @@ func main() {
 		http.Handle("/", h)
 
 		log.Println("Starting HTTP server listening on", *address)
-		http.ListenAndServe(*address, nil)
+		err := http.ListenAndServe(*address, nil)
+		if err != nil {
+			log.Fatal(err)
+		}
 	}
 }
 
