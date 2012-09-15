@@ -5,7 +5,7 @@ Cgd is a daemon that can serve a CGI script over HTTP or FastCGI.
 
 Useful for CGI scripts that serve a whole domain (like [werc](http://werc.cat-v.org)), or to wrap CGI scripts so they can be served by nginx.
 
-Homepage: <http://repo.cat-v.org>
+Homepage: <http://repo.cat-v.org/cgd/>
 
 
 Install Instructions
