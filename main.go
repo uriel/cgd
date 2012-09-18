@@ -27,7 +27,7 @@ func main() {
 
 	// This is a hack to make p9p's rc happier for some unknown reason.
 	c := *cmd
-	if c[0] != "/"[0] {
+	if c[0] != '/' {
 		c = "./" + c
 	}
 
