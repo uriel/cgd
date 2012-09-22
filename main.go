@@ -4,6 +4,7 @@ import (
 	"flag"
 	"log"
 	"os"
+	"strings"
 
 	"net"
 	"net/http"
@@ -31,7 +32,9 @@ func main() {
 		c = "./" + c
 	}
 
-	os.Setenv("PATH", os.Getenv("PATH")+":.")
+	if !strings.Contains(os.Getenv("PATH"), ":.") {
+		os.Setenv("PATH", os.Getenv("PATH")+":.")
+	}
 
 	h := &cgi.Handler{
 		Path:       c,
